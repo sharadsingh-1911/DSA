@@ -48,7 +48,7 @@ class Solution {
                 }
 
             }
-
+            // each new level will get added at first index i.e the previous ones already in ans
             ans.addFirst(level);
         }
         return ans;
