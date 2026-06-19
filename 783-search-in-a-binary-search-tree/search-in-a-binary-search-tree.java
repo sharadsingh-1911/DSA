@@ -22,8 +22,13 @@ class Solution {
         if(root.val == val){
             temp = root;
         }
-        searchBST(root.left , val);
-        searchBST(root.right , val);
+        else if(root.val < val){
+            searchBST(root.right , val);
+        }
+        else{
+            searchBST(root.left , val);
+        }
+        
         return temp;
     }
 }
